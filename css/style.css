@@ -1,3 +1,5 @@
+/** @format */
+
 body {
   font-family: "Roboto", "Railway", sans-serif;
   color: #000000;
@@ -24,6 +26,10 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.outline {
+  outline: none;
 }
 
 .margin-padding {
@@ -109,7 +115,8 @@ img {
   color: #212121;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
   color: #2196f3;
 }
 
@@ -123,7 +130,8 @@ img {
   align-items: center;
 }
 
-.contacts__link:hover {
+.contacts__link:hover,
+.contacts__link:focus {
   color: #2196f3;
 }
 
@@ -231,6 +239,7 @@ img {
   justify-content: center;
 
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .specifics__icon {
@@ -324,7 +333,8 @@ img {
   color: #afb1b8;
 }
 
-.our-team__link:hover {
+.our-team__link:hover,
+.our-team__link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -361,9 +371,11 @@ img {
 
   color: #afb1b8;
   border: solid 1px #afb1b8;
+  border-radius: 4px;
 }
 
-.regular-customers__link:hover {
+.regular-customers__link:hover,
+.regular-customers__link:focus {
   color: #2196f3;
   border: solid 1px #2196f3;
 }
@@ -455,7 +467,8 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.join__link:hover {
+.join__link:hover,
+.join__link:focus {
   background-color: #2196f3;
 }
 
@@ -491,7 +504,8 @@ img {
   border-radius: 4px;
 }
 
-.anchors__button:hover {
+.anchors__button:hover,
+.anchors__button:focus {
   color: #ffffff;
   background: #2196f3;
 
