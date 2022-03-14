@@ -35,7 +35,7 @@
         <nav class="nav-container">
           <ul class="nav list margin-padding">
             <li class="nav__list">
-              <a href="index.html" class="nav__link link outline">Студия</a>
+              <a href="index.html" class="nav__link  nav__link--underscore  link outline">Студия</a>
             </li>
             <li class="nav__list">
               <a href="portfolio.html" class="nav__link link outline">Портфолио</a>
@@ -74,7 +74,7 @@
           <h1 class="hero__title margin-padding">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button type="button" class="hero__button outline">Заказать услугу</button>
+          <button type="button" class="hero__button outline" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -144,21 +144,33 @@
           <h2 class="our-work__title margin-padding">Чем мы занимаемся</h2>
           <ul class="our-work__box list margin-padding">
             <li class="our-work__list">
-              <img src="images/img-1.jpg" alt="Руки набирают код" width="370" />
+             <div class="our-work__imagines">
+                <img src="images/img-1.jpg" 
+                alt="Руки набирают код"
+                 width="370" 
+                />
+              <p class="our-work__text margin-padding">Десктопные приложения</p>
+             </div>
             </li>
             <li class="our-work__list">
-              <img
+              <div class="our-work__imagines">
+                <img
                 src="images/img-2.jpg"
                 alt="Держит в руке телефон и работает за ноутбуком"
                 width="370"
               />
+              <p class="our-work__text margin-padding">Мобильные приложения</p>
+              </div>
             </li>
             <li class="our-work__list">
-              <img
+              <div class="our-work__imagines">
+                <img
                 src="images/img-3.jpg"
                 alt="Выберает на планшете цветовую палитру"
                 width="370"
               />
+              <p class="our-work__text margin-padding">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -402,16 +414,29 @@
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
-            <a class="join__link outline" href="https://www.linkedin.com/">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
+              <a class="join__link outline" href="https://www.linkedin.com/">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </div>
           </div>
           
         </div>
       </div>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+       
+          <button type="button" class="modal__box" data-modal-close>
+            <svg class="modal__icon" width="11" height="11">
+          <use href="./images/icons.svg#mark"></use>
+         </svg>
+          </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
